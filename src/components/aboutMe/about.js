@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./about.css";
-import { DiPostgresql } from "react-icons/di";
 
 const terminalLines = [
   {
