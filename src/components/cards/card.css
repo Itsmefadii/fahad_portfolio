@@ -1,0 +1,22 @@
+.main-card-div{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    border: 2px solid seagreen;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* allow parent grid to size cards */
+    font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Liberation Mono",
+    "Courier New", monospace;
+}
+
+.card-main-heading {
+    color: seagreen;
+}
+
+.card-anchor {
+    color: seagreen;
+    font-size: larger;
+}

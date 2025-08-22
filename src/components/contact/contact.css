@@ -1,0 +1,83 @@
+.contact-main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Liberation Mono",
+    "Courier New", monospace;
+}
+
+.contact-main-heading{
+    font-size: 3rem;
+}
+
+.contact-form{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form-row{
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-label{
+    display: block;
+    flex: 1 1 0;
+}
+
+.contact-label-full{
+    width: 100%;
+}
+
+.contact-input, .contact-textarea{
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid seagreen;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-textarea{
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-actions{
+    display:flex;
+    align-items:center;
+    gap: 1rem;
+}
+
+.contact-submit{
+    background:seagreen;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-status{
+    color:#111827;
+    font-size: 0.95rem;
+}
+
+.sr-only{ /* accessible label hide */
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+@media (max-width: 700px){
+    .contact-form-row{flex-direction: column}
+}

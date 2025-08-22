@@ -1,0 +1,257 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-main-heading {
+  padding-top: 15px;
+  font-size: 3rem;
+  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Liberation Mono",
+    "Courier New", monospace;
+}
+.about-terminal-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+  margin-left: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-skill {
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.97rem;
+  font-weight: 600;
+  text-align: center;
+  color: #22223b;
+  background: #f3f4f6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+}
+.about-skill-node {
+  background: #e6f4ea;
+  color: #228b22;
+  border-color: #b7e4c7;
+}
+.about-skill-mysql {
+  background: #e0f7fa;
+  color: #00758f;
+  border-color: #b2ebf2;
+}
+
+.about-skill-postgresql {
+  background: #dbeff9;   
+  color: #336791;        
+  border-color: #c6e0f2; 
+}
+
+.about-skill-express {
+  background: #f5f5f5;
+  color: #22223b;
+  border-color: #e0e0e0;
+}
+.about-skill-fastify {
+  background: #fffbe6;
+  color: #ffb300;
+  border-color: #ffe082;
+}
+.about-skill-queue {
+  background: #ede9fe;
+  color: #7c3aed;
+  border-color: #d1c4e9;
+}
+.about-skill-git {
+  background: #fff0ee;
+  color: #f34f29;
+  border-color: #ffd6d0;
+}
+
+@media (max-width: 600px) {
+  .about-terminal-skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+  .about-skill {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.about-terminal-container {
+  display: block;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08),
+    0 1.5px 4px 0 rgba(0, 0, 0, 0.04);
+  padding: 2rem 1.5rem;
+  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", monospace;
+  border: 1px solid #e5e7eb;
+  max-width: 700px;
+  width: 100%;
+  min-width: 320px;
+  margin: 2.5rem auto;
+  min-height: 400px;
+  box-sizing: border-box;
+}
+
+.about-terminal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.about-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+.about-dot-red {
+  background: #f87171;
+}
+.about-dot-yellow {
+  background: #fde68a;
+}
+.about-dot-green {
+  background: #4ade80;
+  margin-right: 18px;
+}
+.about-terminal-title {
+  color: #374151;
+  font-weight: 700;
+  font-size: 1.18rem;
+}
+.about-terminal-body {
+  color: #22223b;
+  text-align: left;
+}
+.about-terminal-row {
+  margin-bottom: 1.1rem;
+}
+.about-terminal-user {
+  color: #16a34a;
+  font-weight: 600;
+}
+.about-terminal-cmd {
+  color: #2563eb;
+  font-weight: 500;
+}
+.about-terminal-desc {
+  margin-left: 1.8rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+.about-terminal-services {
+  margin-left: 1.8rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.about-service {
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.about-service-blue {
+  background: #e0e7ff;
+  color: #2563eb;
+}
+.about-service-pink {
+  background: #ffe4e6;
+  color: #db2777;
+}
+.about-service-gray {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* Blinker always reserves space to prevent layout shift */
+.about-terminal-cursor {
+  display: inline-block;
+  width: 1ch;
+  min-width: 1ch;
+  color: #22223b;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-left: 0.2em;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: middle;
+}
+
+.about-cv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.about-cv-button {
+  background-color: seagreen;
+  border: none;
+  height: 60px;
+  width: 150px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 25px 25px 25px 25px;
+  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", monospace;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.about-cv-button:hover {
+  background-color: #228b22;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-terminal-container {
+    padding: 1rem 0.5rem;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-terminal-container {
+    padding: 1rem 0.5rem;
+    max-width: 500px;
+  }
+
+  .about-main-heading {
+  padding-top: 15px;
+  font-size: 2rem;
+}
+}
+
+@media (max-width: 600px) {
+  .about-terminal-container {
+    padding: 1rem 0.5rem;
+    max-width: 400px;
+  }
+
+  .about-main-heading {
+  padding-top: 15px;
+}
+}
+
+@media (max-width: 500px) {
+  .about-terminal-container {
+    padding: 1rem 0.5rem;
+    max-width: 300px;
+  }
+}

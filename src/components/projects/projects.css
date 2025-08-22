@@ -1,0 +1,26 @@
+.main-proj-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-cards-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two cards per row */
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.proj-main-heading{
+    font-size: 3rem;
+    font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Liberation Mono",
+    "Courier New", monospace;
+}
+
+@media (max-width: 800px) {
+    .proj-cards-div { grid-template-columns: 1fr; }
+}
