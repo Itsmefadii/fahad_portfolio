@@ -53,7 +53,7 @@ const terminalLines = [
   {
     prompt: "fahad@fadii:~$",
     command: "cat contact.txt",
-    output: ["> email: fahadiqbalhbd@gmail.com", "> contact: +923232724453"],
+    output: ["> email: fahadiqbalhbd@gmail.com", "> linkedIn: www.linkedin.com/in/fahad-iqbal-634549213", "> contact: +923232724453"],
   },
   {
     prompt: "fahad@fadii:~$",
