@@ -7,7 +7,7 @@ const projects = [
     name: "Digital Invoicing",
     description:
       "Developed a platform that allows merchants and customers to upload and view invoices, while providing client with real-time access to tax collection data and sales metrics. The system enhances financial transparency and enables better monitoring of commercial activity across sectors. It supports secure data handling, efficient invoice management, and automated reporting for regulatory compliance.",
-    repo: "https://github.com/Itsmefadii/digitalInvoicing",
+    repo: "",
   },
   {
     name: "Payment Processing System",
